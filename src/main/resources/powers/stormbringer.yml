@@ -1,0 +1,42 @@
+display-name: "&9&lStormBringer"
+material: LAPIS_BLOCK
+custom-model-data: 0
+lore:
+  - "&1Command the power of the storm."
+  - "&7Calls lightning upon your foes."
+spawn-chance: 8
+cooldown: 15
+post-flight-cooldown: 5
+use-xp-cost: true
+xp-cost-levels: 1 # Adjusted from 1.0
+use-health-cost: false
+health-cost: 2.0
+bossbar-color: BLUE
+effects:
+  activation-sound: ENTITY_LIGHTNING_BOLT_THUNDER # Changed from WEATHER_THUNDER
+  activation-sound-volume: 1.0
+  activation-sound-pitch: 1.0
+  activation-particle: CRIT_MAGIC
+  activation-particle-count: 30
+  activation-particle-offset-x: 0.4
+  activation-particle-offset-y: 0.5
+  activation-particle-offset-z: 0.4
+  activation-particle-speed: 0.2
+  activation-particle-color: "" # Crit magic doesn't use color
+ability:
+  type: projectile # This needs custom code in Java!
+  effect: ""
+  duration: 0
+  level: 1
+  projectile-type: LIGHTNING # This is NOT standard! Requires custom Java code handling in usePower()
+  speed: 1.0 # Not applicable
+  damage: 8.0 # Could represent lightning damage
+  ignite: false # Lightning ignites naturally
+  knockback: 0 # Lightning has knockback naturally
+messages:
+  actionbar-message: "&9Summoning the storm..."
+  cooldown-message: "&9StormBringer Cooldown! &7(%seconds%s)"
+  bossbar-title: "&9&lStormBringer &cCooldown"
+  ability-used-message: "&9Lightning strikes!"
+  not-enough-xp-message: "&cNot enough XP Levels! Need %required%."
+  not-enough-health-message: "&cNot enough Health! Need %required% hearts."

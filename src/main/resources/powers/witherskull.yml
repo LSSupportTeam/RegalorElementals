@@ -1,0 +1,41 @@
+display-name: "&8&lWitherSkull"
+material: BLACK_CONCRETE
+custom-model-data: 0
+lore:
+  - "&8Launch a destructive skull."
+spawn-chance: 2
+cooldown: 5
+post-flight-cooldown: 5
+use-xp-cost: true
+xp-cost-levels: 1 # Adjusted from 0.75, as cost is in levels
+use-health-cost: false
+health-cost: 2.0
+bossbar-color: BLUE # Changed from BLUE in example to GRAY maybe? Or keep BLUE? Kept BLUE
+effects:
+  activation-sound: ENTITY_WITHER_SPAWN
+  activation-sound-volume: 1.0
+  activation-sound-pitch: 1.0
+  activation-particle: SWEEP_ATTACK # Consider changing to SMOKE_LARGE or similar
+  activation-particle-count: 15
+  activation-particle-offset-x: 0.5
+  activation-particle-offset-y: 0.5
+  activation-particle-offset-z: 0.5
+  activation-particle-speed: 0.1
+  activation-particle-color: "" # SWEEP_ATTACK doesn't use color
+ability:
+  type: projectile
+  effect: ""
+  duration: 5
+  level: 1
+  projectile-type: WITHER_SKULL
+  speed: 1.5
+  damage: 6.0 # Represents explosion power for skulls
+  ignite: false # Set to true for blue skull
+  knockback: 0
+messages:
+  actionbar-message: "&7Using &8&lWitherSkull&7..."
+  cooldown-message: "&8WitherSkull Cooldown! &7(%seconds%s)"
+  bossbar-title: "&8&lWitherSkull &cCooldown"
+  ability-used-message: "&8Launched a Wither Skull!"
+  not-enough-xp-message: "&cNot enough XP Levels! Need %required%."
+  not-enough-health-message: "&cNot enough Health! Need %required% hearts."

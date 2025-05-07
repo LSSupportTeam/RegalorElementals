@@ -1,0 +1,41 @@
+display-name: "&4&lRegalium"
+material: REDSTONE_BLOCK
+custom-model-data: 0
+lore:
+  - "&cFire a venomous shot."
+spawn-chance: 1
+cooldown: 3
+post-flight-cooldown: 5
+use-xp-cost: true
+xp-cost-levels: 1 # Adjusted from 0.5
+use-health-cost: false
+health-cost: 2.0
+bossbar-color: RED
+effects:
+  activation-sound: ENTITY_WITHER_SHOOT
+  activation-sound-volume: 1.0
+  activation-sound-pitch: 1.0
+  activation-particle: DAMAGE_INDICATOR # Changed from TOTEM
+  activation-particle-count: 15
+  activation-particle-offset-x: 0.3
+  activation-particle-offset-y: 0.3
+  activation-particle-offset-z: 0.3
+  activation-particle-speed: 0.1
+  activation-particle-color: "" # Damage indicator doesn't use color
+ability:
+  type: projectile
+  effect: ""
+  duration: 5 # Duration for poison effect from arrow
+  level: 1 # Level for poison effect from arrow
+  projectile-type: POISON_ARROW # Your example used this
+  speed: 1.2 # Default arrow speed is usually fine
+  damage: 5.0 # Base arrow damage
+  ignite: false
+  knockback: 0
+messages:
+  actionbar-message: "&4Preparing shot..."
+  cooldown-message: "&4Regalium Cooldown! &7(%seconds%s)"
+  bossbar-title: "&4&lRegalium &cCooldown"
+  ability-used-message: "&4Fired a poison arrow!"
+  not-enough-xp-message: "&cNot enough XP Levels! Need %required%."
+  not-enough-health-message: "&cNot enough Health! Need %required% hearts."

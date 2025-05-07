@@ -1,0 +1,42 @@
+display-name: "&6&lInfernos"
+material: NETHER_STAR
+custom-model-data: 0
+lore:
+  - "&eHarness the power of the nether."
+  - "&7Right-click to unleash a fireball!"
+spawn-chance: 3
+cooldown: 3
+post-flight-cooldown: 5
+use-xp-cost: false
+xp-cost-levels: 1
+use-health-cost: false
+health-cost: 2.0
+bossbar-color: RED
+effects:
+  activation-sound: ENTITY_GHAST_SHOOT
+  activation-sound-volume: 1.0
+  activation-sound-pitch: 0.8
+  activation-particle: FLAME
+  activation-particle-count: 25
+  activation-particle-offset-x: 0.5
+  activation-particle-offset-y: 0.5
+  activation-particle-offset-z: 0.5
+  activation-particle-speed: 0.1
+  activation-particle-color: ""
+ability:
+  type: projectile
+  effect: ""
+  duration: 5
+  level: 1
+  projectile-type: FIREBALL
+  speed: 1.5
+  damage: 4.0
+  ignite: true
+  knockback: 1
+messages:
+  actionbar-message: "&eUsing &6&lInfernos&e..."
+  cooldown-message: "&cInfernos on Cooldown! &7(%seconds%s)"
+  bossbar-title: "&6&lInfernos &cCooldown"
+  ability-used-message: "&aLaunched a fireball!"
+  not-enough-xp-message: "&cNot enough XP Levels! Need %required%."
+  not-enough-health-message: "&cNot enough Health! Need %required% hearts."

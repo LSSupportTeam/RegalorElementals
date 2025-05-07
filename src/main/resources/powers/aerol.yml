@@ -1,0 +1,44 @@
+display-name: "&7&lAerol"
+material: FEATHER
+custom-model-data: 0
+lore:
+  - "&fTake to the skies."
+spawn-chance: 5
+cooldown: 10 # Cooldown before flight can be activated again
+post-flight-cooldown: 5 # Cooldown AFTER flight ends
+use-xp-cost: false
+xp-cost-levels: 1
+use-health-cost: false
+health-cost: 2.0
+bossbar-color: WHITE
+effects:
+  activation-sound: ENTITY_ENDER_DRAGON_FLAP
+  activation-sound-volume: 1.0
+  activation-sound-pitch: 1.0
+  activation-particle: CLOUD # Changed from TOTEM
+  activation-particle-count: 20
+  activation-particle-offset-x: 0.4
+  activation-particle-offset-y: 0.2
+  activation-particle-offset-z: 0.4
+  activation-particle-speed: 0.05
+  activation-particle-color: "" # Cloud doesn't use color
+ability:
+  type: flight
+  effect: ""
+  duration: 10 # Duration of flight in seconds
+  level: 1 # Not used for flight
+  projectile-type: ""
+  speed: 1.0 # Not used for flight
+  damage: 0.0 # Not used for flight
+  ignite: false # Not used for flight
+  knockback: 0 # Not used for flight
+messages:
+  actionbar-message: "&7Preparing for flight..."
+  cooldown-message: "&7Aerol Cooldown! &7(%seconds%s)"
+  bossbar-title: "&7&lAerol &cCooldown"
+  ability-used-message: "&7You soar into the air!"
+  flight-start-message: "&aFlight active for %duration% seconds!" # Added specific flight message
+  flight-end-message: "&cFlight ended." # Added specific flight message
+  post-flight-cooldown-message: "&cCannot fly yet! Wait %seconds%s." # Added specific flight message
+  not-enough-xp-message: "&cNot enough XP Levels! Need %required%."
+  not-enough-health-message: "&cNot enough Health! Need %required% hearts."

@@ -1,0 +1,41 @@
+display-name: "&a&lVisage"
+material: GRASS_BLOCK
+custom-model-data: 0
+lore:
+  - "&2Gain the favor of the villagers."
+spawn-chance: 15
+cooldown: 60 # Added a small cooldown, 0 can be spammy/laggy
+post-flight-cooldown: 5
+use-xp-cost: false
+xp-cost-levels: 1
+use-health-cost: false
+health-cost: 2.0
+bossbar-color: GREEN
+effects:
+  activation-sound: ENTITY_VILLAGER_WORK_LIBRARIAN
+  activation-sound-volume: 1.0
+  activation-sound-pitch: 1.0
+  activation-particle: TOTEM # Consider VILLAGER_HAPPY
+  activation-particle-count: 10
+  activation-particle-offset-x: 0.3
+  activation-particle-offset-y: 0.5
+  activation-particle-offset-z: 0.3
+  activation-particle-speed: 0.1
+  activation-particle-color: "0,128,0"
+ability:
+  type: effect
+  effect: HERO_OF_THE_VILLAGE # Keep as string, code handles it
+  duration: 600
+  level: 1
+  projectile-type: ""
+  speed: 1.0
+  damage: 0.0
+  ignite: false
+  knockback: 0
+messages:
+  actionbar-message: "&aBlessing the village..."
+  cooldown-message: "&aVisage Cooldown! &7(%seconds%s)"
+  bossbar-title: "&a&lVisage &cCooldown"
+  ability-used-message: "&aYou feel favored by the villagers!"
+  not-enough-xp-message: "&cNot enough XP Levels! Need %required%."
+  not-enough-health-message: "&cNot enough Health! Need %required% hearts."

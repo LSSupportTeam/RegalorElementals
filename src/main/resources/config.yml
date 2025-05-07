@@ -1,0 +1,20 @@
+# Regalor Elementals Configuration
+
+# Enable detailed logging for debugging purposes. Default: false
+debug-mode: false
+
+# List of internal power names (must match the filenames in the 'powers' folder without .yml).
+# These are the powers that can be potentially assigned or used.
+registered-powers:
+  - "infernos"
+  - "witherskull"
+  - "whispa"
+  - "visage"
+  - "shield"
+  - "regalium"
+  - "earthol"
+  - "aerol"
+
+# --- Do not manually edit below this line ---
+# Stores which power each player has received. Managed by the plugin.
+received-powers: {}

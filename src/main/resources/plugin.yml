@@ -1,0 +1,38 @@
+name: RegalorElementals
+version: 1.5-DEV
+main: me.lssupportteam.regalorElementals.RegalorElementals
+api-version: 1.16
+description: Custom elemental powers plugin with unique abilities, compatible from Minecraft 1.7.x to 1.21.x
+author: SrCodex
+
+commands:
+  rshelp:
+    description: Shows plugin help menu
+    usage: /rshelp
+    permission-message: You don't have permission to use this command
+
+  rsobtain:
+    description: Obtain your elemental power if you missed it on join
+    usage: /rsobtain
+    permission-message: You can only use this command once
+
+  rsrebirth:
+    description: Change your elemental power (requires permission)
+    usage: /rsrebirth <type>
+    permission: regalor.rebirth
+    permission-message: You don't have permission to use this command
+
+  rsreload:
+    description: Reload plugin configuration (requires permission)
+    usage: /rsreload
+    permission: regalor.reload
+    permission-message: You don't have permission to use this command
+
+permissions:
+  regalor.rebirth:
+    description: Allows changing elemental powers
+    default: op
+
+  regalor.reload:
+    description: Allows reloading plugin configuration
+    default: op
